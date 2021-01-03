@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginBottom="2dp"
+    android:background="#eed7c5">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="157dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/toystory" />
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="TextView"
+        android:textColor="#b36a5e"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieName"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Rate:"
+        android:textColor="#b36a5e" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieName"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/rate"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Type:"
+        android:textColor="#b36a5e" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/tex"
+        android:text="TextView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:backgroundTint="@color/white"
+        android:numStars="4"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#b36a5e"
+        android:rating="3.0" />
+
+    <ImageView
+        android:id="@+id/del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="22dp"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+</RelativeLayout>
